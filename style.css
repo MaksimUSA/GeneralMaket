@@ -1,81 +1,229 @@
-.container{max-width:100%;}
-.top {
+*
+{
+	margin: 0;
+	padding: 0;
+}
+.slider_type
+{
+	font-family: Montserrat SemiBold;
+}
+.slider_type span
+{
+	font-family: Montserrat Regular;
+	margin-left: 25px;
+}
+.text_pod_ikonkami
+{
+	font-family: OpenSans Regular;
+	font-size: 14px;
+	line-height: 26px;
+}
+.top
+{
 	border-bottom: solid 6px #f3edbc;
-	padding:30px 0; 
-	font-family: Montserrat Light; 
+	font-family: Montserrat Light;
+	padding: 30px 0;
 }
-.top_wrap {
-	display:flex;
-	justify-content:space-between;
-	flex-wrap:wrap;
-	align-items:center; 
+.top_wrap
+{
+	align-items: center;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
 }
-
-.top_menu ul li {
-	display:inline;
-	flex-wrap:wrap;
+.top_menu ul li
+{
+	display: inline;
+	flex-wrap: wrap;
 }
-.top_left_logo {
-	margin-left:30px;
-} 
-.top_menu ul li a{
-	text-decoration:none;
-	margin:0 35px; 
-	flex-basis:58%;
-	font-size:12px;
-	line-height:23px;
-	font-weight:300px;
-	color:black;
-	
-	letter-spacing:0.96px;
-	
+.top_left_logo
+{
+	margin-left: 30px;
 }
-.top_menu ul li a:hover{border-bottom:solid 1px ; }
-
-.icons {
-	display:flex;
-	align-items:center;
+.top_menu ul li a
+{
+	color: black;
+	flex-basis: 58%;
+	font-size: 12px;
+	font-weight: 300px;
+	letter-spacing: 0.96px;
+	line-height: 23px;
+	margin: 0 35px;
+	text-decoration: none;
 }
-.icons_search{
-	margin-left:15px;
+.top_menu ul li a:hover
+{
+	border-bottom: solid 1px;
+}
+.icons
+{
+	align-items: center;
+	display: flex;
+}
+.icons_search
+{
 	cursor: pointer;
+	margin-left: 15px;
 }
-.top_right{
-	margin-right:30px;
+.top_right
+{
+	margin-right: 30px;
 }
-
-.slider{
+.slider
+{
 	background: linear-gradient(90deg, #cdced2, #c5c6ca );
 }
-
-.slider_item{
-	display:flex;
-	align-items:center;
+.slider_item
+{
+	align-items: center;
+	box-sizing: border-box;
+	display: flex;
 	padding: 0 60px;
-	box-sizing:border-box;
-	
-}	
+}
+.slider_img
+{
+	display: flex;
+	flex-basis: 50%;
+}
+.slider_img img
+{
+	display: block;
+	max-width: 100%;
+}
+.slider_info
+{
+	box-sizing: border-box;
+	flex-basis: 50%;
+	padding-left: 70px;
+}
+.slider_title
+{
+	color: black;
+	font-family: Montserrat SemiBold;
+	font-size: 70px;
+	font-weight: 600;
+	letter-spacing: 2.32px;
+	line-height: 80px;
+	margin-top: 25px;
+	text-transform: uppercase;
+}
+.slider_info
+{
+	color: #535353;
+	font-size: 14px;
+	line-height: 26px;
+	margin: 0 25px;
+}
+.slider_icons
+{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 25px 0;
+}
+.slider_icons a
+{
+	border: 1px solid;
+	border-radius: 50%;
+	color: black;
+	height: 37px;
+	margin-right: 20px;
+	position: relative;
+	width: 37px;
+}
+.slider_icons a:first-of-type
+{
+	background-color: black;
+}
+.slider_icons a:last-of-type
+{
+	margin-right: 0;
+}
+.slider_icons a img
+{
+	left: 50%;
+	position: absolute;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.shop_now
+{
+	background: black;
+	border-radius: 40px;
+	color: white;
+	display: block;
+	font-size: 9px;
+	height: 13px;
+	letter-spacing: 0.54px;
+	line-height: 13px;
+	padding: 13px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 115px;
+}
+.categories
+{
+	font-family: Montserrat SemiBold;
+	margin: 40px 0;
+}
+.categories ul
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+.categories ul li
+{
+	font-size: 19px;
+	letter-spacing: 1.9px;
+	line-height: 20px;
+	list-style-type: none;
+	margin: 10px 23px;
+}
+.categories ul li a
+{
+	color: gray;
+	display: inline-block;
+	font-weight: 600;
+	text-decoration: none;
+}
+.offers
+{
+	display: flex;
+	justify-content: space-between;
+	margin: 50px 55px 0 55px;
+}
+.offers_left
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.offers_right
+{
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
 
-.slider_img {
-	flex-basis:50%;
-	display:flex;
 }
-.slider_info{
-	flex-basis:50%;
-	padding-left:70px;
-	box-sizing:border-box;
-	
+.offers_info
+{
+	left: 30px;
+	position: absolute;
+	z-index: 1;
 }
-.slider_title{font-size:116px; line-height:107px; font-weight:600;  color:black; letter-spacing:2.32px; text-transform:uppercase; font-family:Montserrat SemiBold;  }
-
-.slider_info {
-	font-size:14px;
-	line-height:26px;
-	color:#535353;
-	margin:0 25px;
-	
+.offers_category
+{
+	font-size: 13px;
+	font-weight: 500;
+	letter-spacing: 0.65px;
+	line-height: 36px;
 }
-.sss{
-	display:block;
-	max-width:100%;
+.offers_name
+{
+	font-size: 19px;
+	font-weight: 700;
+	letter-spacing: 1.425px;
+	line-height: 24px;
 }
