@@ -1,8 +1,5 @@
-*
-{
-	margin: 0;
-	padding: 0;
-}
+*{margin: 0; padding: 0;}
+.container {max-width: 1170px; margin: 5px auto; }
 .slider_type
 {
 	font-family: Montserrat SemiBold;
@@ -160,6 +157,7 @@
 	text-decoration: none;
 	text-transform: uppercase;
 	width: 115px;
+        margin-top: 30px;
 }
 .categories
 {
@@ -182,7 +180,7 @@
 }
 .categories ul li a
 {
-	color: gray;
+	color: black;
 	display: inline-block;
 	font-weight: 600;
 	text-decoration: none;
@@ -192,26 +190,22 @@
 	display: flex;
 	justify-content: space-between;
 	margin: 50px 55px 0 55px;
+        font-family: Montserrat ;
 }
-.offers_left
-{
+.offers_left, .offers_right{
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
-}
-.offers_right
-{
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-}
+	justify-content: space-between;}
 
-}
-.offers_info
-{
-	left: 30px;
+.offers_info{
 	position: absolute;
 	z-index: 1;
+	left:30px;
+	top:30%;
+        
+}
+.offers_info1 {
+    position:absolute; top:79%;left:60px; text-align: center;
 }
 .offers_category
 {
@@ -219,6 +213,7 @@
 	font-weight: 500;
 	letter-spacing: 0.65px;
 	line-height: 36px;
+        margin-bottom: 15px;
 }
 .offers_name
 {
@@ -226,4 +221,280 @@
 	font-weight: 700;
 	letter-spacing: 1.425px;
 	line-height: 24px;
+     
+
 }
+
+.offers_element {
+	position:relative;
+	margin:20px 0 0;       
+}
+
+.offers_new {position: absolute; top:10px; right: 10px; padding: 5px 10px; background-color: black;
+            text-decoration: none; color:white;
+}
+
+.offers_new:before {
+                    content: "";
+                    border:10px solid transparent; 
+                    border-left: 10px solid; 
+                    color:black;
+                    position: absolute; 
+                    left:0;
+                    bottom: -9px;
+}
+
+.offers_two_get {font-family: Montserrat; font-size: 22px; font-weight:700;
+                
+
+}
+.offers_glasses {font-weight: 600; justify-content: center; display: absolute; }
+
+.banner{
+    	display: flex;
+	justify-content: space-between;
+	margin: 5px 55px 0 55px;
+        position: relative;
+}
+
+.see {
+        background: white;
+	border-radius: 60px;
+	color: black;
+	display: block;
+	font-size: 12px;
+	height: 25px;
+	letter-spacing:2.9px;
+	line-height: 20px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 250px;
+        margin-top: 30px;
+        margin: 15px auto;
+        
+}
+.see:hover {
+    background: black;
+	border-radius: 60px;
+	color:white;
+	display: block;
+	font-size: 12px;
+	height: 25px;
+	letter-spacing:2.9px;
+	line-height: 20px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 250px;
+        margin-top: 30px;
+        margin: 15px auto;
+} 
+
+.full_collection{position: relative; }
+.banner{ background-color:#00b7d9; margin-top: 25px; max-width: 1170px;} 
+.brand {position: absolute; right:10%; top:20%; text-align: center; }
+.brand> .see {justify-content: center; }
+.brand_title {font-size: 26px; font-weight: 600; line-height: 30px; letter-spacing:2.6px;
+text-transform: uppercase;
+}
+
+ 
+/*  Продуктс и т.д */
+.product {margin: 90px 0; }
+.types { font-size: 26px ; line-height: 30px;
+letter-spacing: 2.6px; font-weight: 600;text-transform: uppercase;
+text-align: center;
+}
+.types2 {font-size: 14px; margin-top:25px;  line-height: 20px; letter-spacing: 5.6px;text-align: center;
+    
+}
+
+.product_block{ display:flex; justify-content: space-between; flex-wrap:wrap;
+margin: 40px 0;
+}
+
+.product_title{
+    flex-basis:33%; position: relative;    
+}
+.product_title img {display: block ; max-width: 100%; margin:5px auto;}
+
+.product_title a {
+	background: black;
+	border-radius: 60px;
+	color: white;
+	display: block;
+	font-size: 13px;
+	height: 20px;
+	letter-spacing: 0.54px;
+	line-height: 20px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 175px;
+        margin-bottom: 50px;
+        position: absolute;
+        left: 50%; transform: translateX(-50%);
+        bottom: 0;
+}
+
+.product_title a:hover {
+    	background:white;
+	border-radius: 60px;
+	color: black;
+	display: block;
+	font-size: 13px;
+	height: 20px;
+	letter-spacing: 0.54px;
+	line-height: 20px;
+	padding: 20px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 175px;
+        margin-bottom: 50px;
+        position: absolute;
+        left: 50%; transform: translateX(-50%);
+        bottom: 0;
+} 
+
+.feature {text-align:center; font-size: 26px; line-height: 30px; font-weight: 600; letter-spacing: 2.6px;}
+
+.ted {font-weight: 600; }
+
+.feature_image {display: flex; flex-wrap: wrap; justify-content: space-between; }
+
+.more {
+        background:white;
+        border: solid 2px #f3edbc;
+	border-radius: 60px;
+	color:black;
+	display: block;
+	font-size: 12px;
+	height: 25px;
+	letter-spacing:2.9px;
+	line-height:20px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 200px;
+        margin: 15px auto 90px auto;
+}
+.more:hover {
+        background:white;
+        border: solid 2px black;
+	border-radius: 60px;
+	color:black;
+	display: block;
+	font-size: 12px;
+	height: 25px;
+	letter-spacing:2.9px;
+	line-height:20px;
+	padding: 15px 0;
+	text-align: center;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 200px;
+        margin: 15px auto 90px auto;
+}
+.finish_banner {text-align: center; position: relative;}
+.finish_banner img { margin: 0px auto; max-width: 100%;position: relative;}
+.finish_banner p {text-align: center; margin: 20px auto;} 
+.fnn a {text-align:center; text-decoration: none; color: white; }
+.brand_title1 {
+font-size: 26px; font-weight: 600; line-height: 30px; letter-spacing:2.6px;
+text-transform: uppercase;}
+.fnn {position:absolute; left:15%; top:10%;}
+.off75 {letter-spacing: 6.6px; }
+.up_now { 
+    padding-top:1%;
+   width: 200px;
+   height: 30px;
+   border-radius: 60px;
+   background-color: black;
+}
+.up_now:hover { 
+    padding-top:1%;
+   width: 200px;
+   height: 30px;
+   border-radius: 60px;
+   background-color:gray; 
+}
+.our {text-align:center; font-size: 26px; line-height: 30px; font-weight: 600; letter-spacing: 2.6px;
+color: gray; margin: 25px auto;
+}
+
+.blog {display: block;  margin: 90px auto; }
+.blog_title {font-size: 26px;
+            line-height: 30px;
+            letter-spacing: 2.6px;
+            font-weight: 600;
+            text-transform: uppercase;
+            text-align: center;
+}
+.blog_blog { display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            margin-top: 50px;
+}
+.blog_element {flex-basis: 48.8%; }
+.blog_element img {display: block; max-width: 100%; }
+
+.blog_info {width:calc(100% - 70px); 
+           margin: 0 auto;
+           transform:translateY(-50%);
+           text-align: center;
+           background-color:white;
+           padding: 15px 0;
+}
+.blog_topic a {
+    font-weight:600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.9px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+}
+.blog_topic a:hover {
+    font-weight:600;
+    font-size: 18px;
+    line-height: 18px;
+    letter-spacing: 0.9px;
+    text-decoration:underline ;
+    text-transform: uppercase;
+    color: black;
+}
+.blog_date { 
+    font-size: 14px;
+    line-height: 24px;
+    color:#7d7d7d;
+}
+.blog_date:hover { 
+    font-size: 14px;
+    line-height: 24px;
+    color:#7d7d7d;
+    text-decoration:underline;
+    cursor: pointer;
+}
+.footer{max-width: 1170px; margin: 1px auto; }
+.links_wrap {display:flex; justify-content: space-between; flex-wrap: wrap;  }
+.links_element{ flex-basis: 20%;}
+.links_title {font-size: 15px; line-height: 20px; text-transform: uppercase; font-weight: 700;
+             margin-bottom:25px; text-transform: uppercase; 
+}
+.links_element a {font-size: 14px;line-height: 30px;text-decoration: none; font-weight: 300;
+                 color:#727272;
+} 
+.links_element a:hover {font-size: 14px;line-height: 30px;text-decoration:underline; font-weight: 300;
+                 color:#727272;
+}
+.links_element span {font-weight:600;}
+
+.podval {margin: 60px auto; text-align: center; font-size:  }
+.podval_title {margin-bottom: 20px; font-size: 12px; line-height: 2.6px; color:#727272; }
+
